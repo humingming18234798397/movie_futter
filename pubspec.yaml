@@ -23,6 +23,12 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  flutter_swiper: ^1.0.6
+ #fluttertoast: any
+  dio: any
+  intl: any
+  http: ^0.12.0+1
+  cached_network_image: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -34,7 +40,20 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
+  assets:
+    - images/yindaoye.png
+    - images/jc.jpg
+    - images/wodeyuyue.png
+    - images/chongzhijilu.png
+    - images/group_2.png
+    - images/duihao.png
+    - images/yijianfankui_01.png
+    - images/invalid_name.png
+    - images/pinglun.png
+    - images/wodedianyingpiao.png
+    - images/back.png
+    - images/wuguanzhu.png
+    - images/beiying.jpg
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
