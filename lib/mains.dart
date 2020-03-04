@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_futter/eventbus/myicons.dart';
 import 'package:movie_futter/homehttp.dart';
 import 'package:movie_futter/homemovie.dart';
 import 'package:movie_futter/mymovie.dart';
@@ -36,6 +37,7 @@ class _HomeActivity extends State<HomeActivity> with SingleTickerProviderStateMi
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+
         body: new TabBarView(
           controller: controller,
           children: <Widget>[
@@ -45,23 +47,35 @@ class _HomeActivity extends State<HomeActivity> with SingleTickerProviderStateMi
           ],
         ),
         bottomNavigationBar: Material(
-          color: Colors.blue,
+          color: Color(0xff141931),
+          // backgroundColor: Color(0xff141931),
           child: TabBar(
             controller: controller,
-            labelColor: Colors.white,
-            unselectedLabelColor: Colors.black26,
+            labelColor: Colors.red,
+            unselectedLabelColor: Colors.white,
             tabs: <Widget>[
               new Tab(
                 text: "电影",
-                icon: new Icon(Icons.movie),
+                 icon:Icon(MyIcons.dianying),
+                /*icon: Image.asset('images/movie.png',
+                ),*/
               ),
               new Tab(
                 text: "影院",
-                icon: new Icon(Icons.album),
+                icon:Icon(MyIcons.yingyuan),
+                //icon: new Icon(Icons.album),
+                /*icon: Image.asset('images/yingyuna_false.png',
+                  width: 30,
+                  height: 30,
+                ),*/
               ),
               new Tab(
                 text: "我的",
-                icon: new Icon(Icons.person),
+                icon:Icon(MyIcons.my),
+               /*icon: Image.asset('images/my_false.png',
+                 width: 30,
+                 height: 30,
+               ),*/
               ),
             ],
           ),
